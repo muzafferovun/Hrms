@@ -1,8 +1,8 @@
 package kodlamaio.hrms.core.utilities.mernis;
 
-import kodlamaio.hrms.core.utilities.results.ErrorResult;
-import kodlamaio.hrms.core.utilities.results.Result;
-import kodlamaio.hrms.core.utilities.results.SuccessResult;
+import kodlamaio.hrms.core.results.ErrorResult;
+import kodlamaio.hrms.core.results.Result;
+import kodlamaio.hrms.core.results.SuccessResult;
 import kodlamaio.hrms.entities.concretes.Person;
 
 public class MernisControl {

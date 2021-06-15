@@ -1,8 +1,7 @@
-package kodlamaio.hrms.core.utilities.results;
+package kodlamaio.hrms.core.results;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class AllDataResult {
 	private List<DataResult> dataResult;
@@ -59,5 +58,4 @@ public class AllDataResult {
 		return successResult;
 	}
 	
-
 }
