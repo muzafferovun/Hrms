@@ -8,7 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.CompanyActivationCodesService;
 
-import kodlamaio.hrms.core.utilities.results.Result;
+import kodlamaio.hrms.core.results.AllDataResult;
+import kodlamaio.hrms.core.results.DataResult;
+import kodlamaio.hrms.core.results.ErrorDataResult;
+import kodlamaio.hrms.core.results.ErrorResult;
+import kodlamaio.hrms.core.results.Result;
+import kodlamaio.hrms.core.results.SuccessDataResult;
+import kodlamaio.hrms.core.results.SuccessResult;
 import kodlamaio.hrms.entities.concretes.CompanyActivationCodes;
 
 

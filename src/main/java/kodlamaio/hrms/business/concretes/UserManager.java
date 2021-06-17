@@ -9,10 +9,13 @@ import org.springframework.stereotype.Service;
 import kodlamaio.hrms.business.abstracts.UserService;
 import kodlamaio.hrms.core.loggers.concretes.LoggerManager;
 import kodlamaio.hrms.core.loggers.concretes.Utils;
-import kodlamaio.hrms.core.utilities.results.DataResult;
-import kodlamaio.hrms.core.utilities.results.Result;
-import kodlamaio.hrms.core.utilities.results.SuccessDataResult;
-import kodlamaio.hrms.core.utilities.results.SuccessResult;
+import kodlamaio.hrms.core.results.AllDataResult;
+import kodlamaio.hrms.core.results.DataResult;
+import kodlamaio.hrms.core.results.ErrorDataResult;
+import kodlamaio.hrms.core.results.ErrorResult;
+import kodlamaio.hrms.core.results.Result;
+import kodlamaio.hrms.core.results.SuccessDataResult;
+import kodlamaio.hrms.core.results.SuccessResult;
 import kodlamaio.hrms.dataAccess.abstracts.UserDao;
 import kodlamaio.hrms.entities.concretes.User;
 

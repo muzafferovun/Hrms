@@ -12,8 +12,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.JobPositionService;
 import kodlamaio.hrms.business.abstracts.SectorPositionService;
-import kodlamaio.hrms.core.utilities.results.DataResult;
-import kodlamaio.hrms.core.utilities.results.Result;
+import kodlamaio.hrms.core.results.AllDataResult;
+import kodlamaio.hrms.core.results.DataResult;
+import kodlamaio.hrms.core.results.ErrorDataResult;
+import kodlamaio.hrms.core.results.ErrorResult;
+import kodlamaio.hrms.core.results.Result;
+import kodlamaio.hrms.core.results.SuccessDataResult;
+import kodlamaio.hrms.core.results.SuccessResult;
 import kodlamaio.hrms.dataAccess.abstracts.SectorPositionDao;
 import kodlamaio.hrms.entities.concretes.JobPosition;
 import kodlamaio.hrms.entities.concretes.SectorPosition;
