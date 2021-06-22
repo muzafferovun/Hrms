@@ -14,7 +14,6 @@ import kodlamaio.hrms.core.methods.GlobalMethods;
 import kodlamaio.hrms.core.utilities.mernis.MernisControl;
 import kodlamaio.hrms.core.results.AllDataResult;
 import kodlamaio.hrms.core.results.DataResult;
-import kodlamaio.hrms.core.results.ErrorDataResult;
 import kodlamaio.hrms.core.results.ErrorResult;
 import kodlamaio.hrms.core.results.Result;
 import kodlamaio.hrms.core.results.SuccessDataResult;
@@ -50,15 +49,15 @@ public class PersonManager implements PersonService {
 	@Override
 	public Result add(PersonUser personUser) {
 		if(!checkUser(personUser.getUser())) {
-			return new ErrorResult(false, "email adresi boş veya sistemde kayıtlı");
+			return new ErrorResult("email adresi boş veya sistemde kayıtlı");
 		}
 		MernisControl mernisControl=new MernisControl();
-		if(mernisControl.checkPerson(personUser.getPerson()).getMessage().length()>0) {
-			return new ErrorResult(mernisControl.checkPerson(personUser.getPerson()).getMessage());
+		if(mernisControl.checkPerson(personUser.getPerson()).isSuccess()==false) {
+			return new ErrorResult("tc hatalı");
 		}
 		
 		if(!checkNationalIdentity(personUser.getPerson())) {
-			return new ErrorResult(false, "National_identity sistemde kayıtlı");
+			return new ErrorResult("National_identity sistemde kayıtlı");
 		}
 		
 			
